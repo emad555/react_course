@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom/client';
 // import ExpenseItem from './components/ExpenseItem';
 
+import React from 'react';
 import './index.css';
 import App from './App';
 
