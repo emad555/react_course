@@ -27,7 +27,8 @@ const ExpenseItem = (props) => {
                 <div className="expense-item__price"> ${props.amount}</div>
             </div>
             {/* create a button and to use the clickHandler function*/}
-            <button onClick={clickHandler}>Change Title</button>
+            
+            {/* <button  className = "input" onClick={clickHandler}>Change Title</button> */}
         </Card>
     );
 }

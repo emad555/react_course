@@ -1,6 +1,7 @@
 import React from 'react';
 import Expenses from './components/Expenses/Expenses';
-
+import ExpenseForm from './components/NewExpense/ExpenseForm';
+import NewExpense from './components/NewExpense/NewExpense';
 const App =() => {
   const items = [
     {
@@ -23,10 +24,17 @@ const App =() => {
       date: new Date(2021, 5, 12),
     },
   ];
+
+  const addExpenseHandler = expense =>{
+    console.log('In App.js');
+    console.log(expense);
+  }
+
+
   return React.createElement(
-    'dev', 
+    'div', 
     {}, 
-    React.createElement('h2', {}, "First Lesson"),
+    React.createElement(NewExpense, {onAddExpense: addExpenseHandler}),
     React.createElement(Expenses, {expenses: items})
     );
   
